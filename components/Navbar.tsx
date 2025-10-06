@@ -2,6 +2,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import NavItems from "@/components/NavItems";
+import {
+    SignInButton,
+    SignedIn,
+    SignedOut,
+    UserButton,
+} from "@clerk/nextjs";
 
 export default function Navbar() {
     return (
@@ -15,12 +21,23 @@ export default function Navbar() {
                         height={44}
                     />
                 </div>
-                 </Link>
-                <div className=" flex items-center gap-8">
-                    <NavItems />
-                    <p>Sign In</p>
-                </div>
-           
+            </Link>
+            <div className=" flex items-center gap-8">
+                <NavItems />
+                <SignedOut>
+                    <SignInButton>
+                        <button className="btn-signin">Sign In</button>
+
+
+                    </SignInButton>
+
+
+                </SignedOut>
+                <SignedIn>
+                    <UserButton afterSignOutUrl="/" />
+                </SignedIn>
+            </div>
+
         </nav>
     );
 }
