@@ -1,0 +1,5 @@
+npm error code ERR_SSL_CIPHER_OPERATION_FAILED
+npm error errno ERR_SSL_CIPHER_OPERATION_FAILED
+npm error Invalid response body while trying to fetch https://registry.npmjs.org/@sentry%2fnextjs: C0E0AEFA01000000:error:1C800066:Provider routines:ossl_gcm_stream_update:cipher operation failed:../deps/openssl/openssl/providers/implementations/ciphers/ciphercommon_gcm.c:325:
+npm error
+npm error A complete log of this run can be found in: /Users/amritanshpandey/.npm/_logs/2025-10-23T05_04_02_647Z-debug-0.log
