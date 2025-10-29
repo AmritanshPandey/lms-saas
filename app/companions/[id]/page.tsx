@@ -1,4 +1,4 @@
-import { getCompanion } from "@/lib/actions/compnaion.actions";
+import { getCompanion } from "@/lib/actions/companion.actions";
 import { redirect } from "next/navigation";
 import { currentUser } from "@clerk/nextjs/server";
 import { getSubjectColor } from "@/lib/utils";

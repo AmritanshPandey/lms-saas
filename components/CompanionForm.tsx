@@ -22,7 +22,7 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 import { Textarea } from "./ui/textarea";
-import { createCompanion } from "@/lib/actions/compnaion.actions";
+import { createCompanion } from "@/lib/actions/companion.actions";
 import {redirect} from "next/navigation";
 
 
